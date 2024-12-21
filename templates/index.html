@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.html" %}
 
-<head>
-    <title>Rahul's Store</title>
-</head>
+{% block title %}
+<title>Rahul's Store</title>
+{% endblock title %}
 
-<body>
-    <center>
-        <h1>Rahul's Store</h1>
-    </center>
-    <center>
-        <p>Best merch in the game</p>
-    </center>
-
+{% block content %}
+    <center><h1>Rahul's Store</h1></center>
+    <center><p>Best merch in the game</p></center>
     <center><h2>Popular Products</h2></center>
+    <!-- for loop -->
     {% for product in popular_products %}           <!-- for loop start -->
             <h3>Product Name : {{product.name}}</h3>    <!-- insert product name variable -->
+            <!-- if-else conditoinal statement -->
             {% if product.discounted %}
             <p style="color: red">Discounted : ${{product.discounted_amount}}</p>
             <!-- if -->
@@ -29,7 +25,4 @@
     {% endfor %}                                     <!-- for loop end -->
 
 
-
-</body>
-
-</html>
+{% endblock content %}

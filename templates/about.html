@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.html" %}         <!-- Import the layout.html file -->
 
-<head>
-    <title>About Us</title>
-</head>
+{% block title %}
+<title>About Us</title>
+{% endblock title %}
 
-<body>
-    <center>
-        <h1>About Us</h1>
-    </center>
-    <center>
-        <p>A developer Trying to sell merch</p>
-    </center>
-</body>
+{% block content %}
+<center><h1>About Us</h1></center>
+<center><p>A developer trying to sell mech</p></center>
+{% endblock content %}
 
-</html>
+

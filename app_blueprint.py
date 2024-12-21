@@ -9,6 +9,8 @@ popular_products = [
     {'name':'Rahul T-shirt', 'size':'large', 'price':15, 'img': '/images/red.jfif', 'discounted':False}
 ]
 
+# render html files
+
 @app_blueprint.route('/')
 def index():
     return render_template("index.html", popular_products=popular_products)
