@@ -8,6 +8,7 @@
     <center><h1>Rahul's Store</h1></center>
     <center><p>Best merch in the game</p></center>
     <center><h2>Popular Products</h2></center>
+    <div class="featured-products-container">
     <!-- for loop -->
     {% for product in popular_products %}           <!-- for loop start -->
             <h3>Product Name : {{product.name}}</h3>    <!-- insert product name variable -->
@@ -19,10 +20,11 @@
              <p style="color: green">Normal Price</p>
              <!-- Else -->
               {% endif %}
-            <img src= {{ product.img }}>
+            <img src= '{{url_for("static", filename=product.img)}}'>
             <h4>Size : {{ product.size }}</h4>
-            <h5>Price : {{ product.price }}</h5>
+            <h5>Price : ${{ product.price }}</h5>
+        </div>
     {% endfor %}                                     <!-- for loop end -->
-
+    
 
 {% endblock content %}
