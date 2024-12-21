@@ -1,16 +1,6 @@
 from flask import Flask
+from app_blueprint import app_blueprint
 
 app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return "Home page"
-
-@app.route('/about')
-def about():
-    return "About"
-
-@app.route('/contact')
-def contact():
-    return "Contact Us"
+app.register_blueprint(app_blueprint)
 
