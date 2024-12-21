@@ -16,6 +16,13 @@
     <center><h2>Popular Products</h2></center>
     {% for product in popular_products %}           <!-- for loop start -->
             <h3>Product Name : {{product.name}}</h3>    <!-- insert product name variable -->
+            {% if product.discounted %}
+            <p style="color: red">Discounted : ${{product.discounted_amount}}</p>
+            <!-- if -->
+             {% else %}
+             <p style="color: green">Normal Price</p>
+             <!-- Else -->
+              {% endif %}
             <img src= {{ product.img }}>
             <h4>Size : {{ product.size }}</h4>
             <h5>Price : {{ product.price }}</h5>

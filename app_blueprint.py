@@ -4,9 +4,9 @@ app_blueprint = Blueprint('app_blueprint', __name__)
 
 # variables
 popular_products = [
-    {'name':'Rahul T-shirt', 'size':'small', 'price':5, 'img': '/images/red.jfif'},
-    {'name':'Rahul T-shirt', 'size':'medium', 'price':10, 'img': '/images/red.jfif'},
-    {'name':'Rahul T-shirt', 'size':'large', 'price':15, 'img': '/images/red.jfif'}
+    {'name':'Rahul T-shirt', 'size':'small', 'price':5, 'img': '/images/red.jfif', 'discounted':True, 'discounted_amount':5},
+    {'name':'Rahul T-shirt', 'size':'medium', 'price':10, 'img': '/images/red.jfif', 'discounted':True, 'discounted_amount':2},
+    {'name':'Rahul T-shirt', 'size':'large', 'price':15, 'img': '/images/red.jfif', 'discounted':False}
 ]
 
 @app_blueprint.route('/')
