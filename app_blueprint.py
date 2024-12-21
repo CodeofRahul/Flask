@@ -1,15 +1,15 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 app_blueprint = Blueprint('app_blueprint', __name__)
 
 @app_blueprint.route('/')
 def index():
-    return "<h1>Home page</h1>"
+    return render_template("index.html")
 
 @app_blueprint.route('/about')
 def about():
-    return "<h1>About</h1>"
+    return render_template("about.html")
 
 @app_blueprint.route('/contact')
 def contact():
-    return "<h1>Contact Us</h1>"
+    return render_template("contact.html")
