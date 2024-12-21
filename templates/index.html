@@ -12,6 +12,17 @@
     <center>
         <p>Best merch in the game</p>
     </center>
+
+    <center><h2>Popular Products</h2></center>
+    {% for product in popular_products %}           <!-- for loop start -->
+            <h3>Product Name : {{product.name}}</h3>    <!-- insert product name variable -->
+            <img src= {{ product.img }}>
+            <h4>Size : {{ product.size }}</h4>
+            <h5>Price : {{ product.price }}</h5>
+    {% endfor %}                                     <!-- for loop end -->
+
+
+
 </body>
 
 </html>
