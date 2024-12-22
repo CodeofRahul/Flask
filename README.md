@@ -38,9 +38,10 @@
 
 ## Docs:
 
-Flask docs : `https://flask.palletsprojects.com/en/stable/`
-Flask Quickstart : `https://flask.palletsprojects.com/en/stable/quickstart/`
-Flask blueprint : `https://flask.palletsprojects.com/en/stable/blueprints/`
+- Flask docs : `https://flask.palletsprojects.com/en/stable/`
+- Flask Quickstart : `https://flask.palletsprojects.com/en/stable/quickstart/`
+- Flask blueprint : `https://flask.palletsprojects.com/en/stable/blueprints/`
+- Flask Rendering Templates: `https://www.geeksforgeeks.org/flask-rendering-templates/`
 
 
 ### A minimal Flask application code:

@@ -1,9 +1,56 @@
 body{
     background-color: lightgray;
+    margin: 0;
+    padding: 0;
 }
 
 
-h1,h2,h3,h4,h5,p{
+h2,h3,h4,h5{
     font-family: Arial, Helvetice, sans-serif;
     color:black;
+}
+
+h1, p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* . --> refrencing to class */
+/* # --> refrecing to id */
+
+.featured-products-container{
+    width: 80%;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+.featured-products{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin-left: 5%;
+}
+
+.featured-products img{
+    position: relative;
+    width: 50%;
+}
+
+.nav-container{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-container a{
+    text-decoration: none;
+    font-size: 20Px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+a:hover{
+    border-bottom: red 5px solid;
 }

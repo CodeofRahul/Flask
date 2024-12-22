@@ -6,6 +6,16 @@
     {% endblock title %}
 </head>
 <body>
+        {% block nav %}
+    <div class="nav-container">
+        <center><h1>Rahul's Store</h1></center>
+        <center><p>Best merch in the game</p></center>
+        <a href="{{url_for('app_blueprint.index')}}">Home</a>
+        <a href="{{url_for('app_blueprint.about')}}">About</a>
+        <a href="{{url_for('app_blueprint.contact')}}">Contact</a>
+        {% endblock nav %}
+    </div>
+
     {% block content %}
     {% endblock content %}    
 </body>
