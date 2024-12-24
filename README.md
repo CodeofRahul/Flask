@@ -79,3 +79,53 @@ def contact():
 - To run the server = `flask run`
 - To see the result on browser = `http://localhost:5000/`
 - To set the flask on debug to auto reload = `set flask_debug=1`
+
+
+## Jinja2:
+
+- Jinja2 is a template processing toolkit
+- Allows you to create and render text templates
+- Integrates well with Flask
+    - Use to render HTML based on templates
+
+### Tags:
+
+- `{% ... %}` for Statements
+- `{{ ... }}` for Expressions to print variable
+- `{# ... #}` for Comments not included in the template output
+
+#### Conditoinal:
+
+```
+{% if ... %}
+ ...
+{% else %}
+ ...
+{% endif %}
+```
+
+```
+{% if score > 80 %}
+I'm happy to inform you that you did very well on todays {{ test_name }}.
+{% else %}
+Your score on today's test {{ test_name }} could have been better. More stduy.
+{% endif %}
+YOu achieved {{ score }} out of {{ max_score }} points!
+```
+
+#### Loops:
+
+```
+{% for ... %}
+... 
+{% endfor %}
+```
+
+```
+topItems = ["Item 2", "Item 3", "Item 7"]
+
+{% for item in topItems %}
+{{item}}
+{% endfor %}
+```
+
